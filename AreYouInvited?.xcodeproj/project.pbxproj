@@ -15,6 +15,11 @@
 		278AEDD12408069900DED077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278AEDCF2408069900DED077 /* LaunchScreen.storyboard */; };
 		278AEDDC2408069D00DED077 /* AreYouInvited_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AEDDB2408069D00DED077 /* AreYouInvited_Tests.swift */; };
 		278AEDE72408069E00DED077 /* AreYouInvited_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AEDE62408069E00DED077 /* AreYouInvited_UITests.swift */; };
+		278AEDF7240818F700DED077 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AEDF6240818F700DED077 /* FileManager.swift */; };
+		278AEDFB2408234B00DED077 /* customers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 278AEDFA2408234B00DED077 /* customers.txt */; };
+		278AEDFF2408336900DED077 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AEDFE2408336900DED077 /* Customer.swift */; };
+		278AEE012408390900DED077 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AEE002408390900DED077 /* SwiftyJSON.swift */; };
+		278AEE03240844EA00DED077 /* DistanceCalculatorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AEE02240844EA00DED077 /* DistanceCalculatorClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		278AEDE22408069E00DED077 /* AreYouInvited?UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AreYouInvited?UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278AEDE62408069E00DED077 /* AreYouInvited_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreYouInvited_UITests.swift; sourceTree = "<group>"; };
 		278AEDE82408069E00DED077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278AEDF6240818F700DED077 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		278AEDFA2408234B00DED077 /* customers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = customers.txt; sourceTree = "<group>"; };
+		278AEDFE2408336900DED077 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		278AEE002408390900DED077 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		278AEE02240844EA00DED077 /* DistanceCalculatorClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculatorClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				278AEDCD2408069900DED077 /* Assets.xcassets */,
 				278AEDCF2408069900DED077 /* LaunchScreen.storyboard */,
 				278AEDD22408069900DED077 /* Info.plist */,
+				278AEDF6240818F700DED077 /* FileManager.swift */,
+				278AEDFA2408234B00DED077 /* customers.txt */,
+				278AEDFE2408336900DED077 /* Customer.swift */,
+				278AEE002408390900DED077 /* SwiftyJSON.swift */,
+				278AEE02240844EA00DED077 /* DistanceCalculatorClass.swift */,
 			);
 			path = "AreYouInvited?";
 			sourceTree = "<group>";
@@ -232,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278AEDFB2408234B00DED077 /* customers.txt in Resources */,
 				278AEDD12408069900DED077 /* LaunchScreen.storyboard in Resources */,
 				278AEDCE2408069900DED077 /* Assets.xcassets in Resources */,
 				278AEDCC2408069000DED077 /* Main.storyboard in Resources */,
@@ -261,7 +277,11 @@
 			files = (
 				278AEDC92408069000DED077 /* ViewController.swift in Sources */,
 				278AEDC52408069000DED077 /* AppDelegate.swift in Sources */,
+				278AEE03240844EA00DED077 /* DistanceCalculatorClass.swift in Sources */,
+				278AEDFF2408336900DED077 /* Customer.swift in Sources */,
 				278AEDC72408069000DED077 /* SceneDelegate.swift in Sources */,
+				278AEE012408390900DED077 /* SwiftyJSON.swift in Sources */,
+				278AEDF7240818F700DED077 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

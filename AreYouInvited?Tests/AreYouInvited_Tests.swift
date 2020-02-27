@@ -19,16 +19,25 @@ class AreYouInvited_Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testFileContents() {
+        let fileManager = FileManager.sharedInstance
+        let filePath = Bundle.main.path(forResource: "customers", ofType: "txt")!
+        if let customers = fileManager.readJSONFile(from: URL(fileURLWithPath: filePath)) {
+            let randomNumber = Int.random(in: 1..<customers.count)
+            XCTAssertNotNil(customers[randomNumber].latitude, "latitude should not be nil")
+            XCTAssertNotNil(customers[randomNumber].longitude, "longitude should not be nil")
+        }
+        else {
+            XCTFail()
         }
     }
+    
+    func testCalculateDistance(){
+        let distanceClass = DistanceCalculatorClass.sharedInstance
+        let distance = distanceClass.calculateCustomerDistance(customerLatitude: 53.2451022, customerLongitude: -6.238335, destinationLatitude: 53.339428, destinationLongitude: -6.257664)
+        XCTAssertEqual(Int(distance), 10,"This should be 10")
+    }
+    
+    
 
 }
